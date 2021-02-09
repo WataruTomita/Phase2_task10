@@ -6,6 +6,8 @@ class SearchController < ApplicationController
     @records = search_for(@method, @model, @value)
   end
 
+
+  # 検索条件分岐
   private
     def match(model, value)
       if model == 'user'
